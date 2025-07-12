@@ -1,0 +1,114 @@
+.navbar {
+  width: 100%;
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  font-size: 14px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 10%,
+    transparent
+  );
+  z-index: 1;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+
+.navbar-left h2 {
+  width: 90px;
+  color: red;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.navbar-left ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+.navbar-left ul li {
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navbar-right .icons {
+  width: 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navbar-right .profile {
+  border-radius: 4px;
+  width: 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+.navbar-right > p {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.navbar .drop-down {
+  position: absolute;
+  top: 100%;
+  right: 5rem;
+  width: max-content;
+  background: #191919;
+  padding: 18px 22px;
+  border-radius: 2px;
+  text-decoration: underline;
+  z-index: 1;
+  display: none;
+}
+.navbar .drop-down p {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.navbar-profile:hover .drop-down {
+  display: block;
+}
+
+.nav-dark {
+  background: #141414;
+}
+
+/* ........media query */
+
+@media (max-width: 800px) {
+  .navbar {
+    padding: 20px 4%;
+  }
+
+  .navbar-left ul {
+    display: none;
+  }
+  .navbar-left h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar-left h2 {
+    font-size: 1.5rem;
+  }
+  .navbar-right {
+    gap: 10px;
+  }
+
+  .icons {
+    display: none;
+  }
+}
