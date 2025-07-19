@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Login.css";
 import { login, signup } from "../../firebase";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";

@@ -1,6 +1,5 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./Navbar.css";
-import logo from "../../assets/play.png";
 import { IoSearchSharp } from "react-icons/io5";
 import { FaRegBell } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa";
